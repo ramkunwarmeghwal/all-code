@@ -1,0 +1,135 @@
+<!-- <html>
+    <h3>Enter ASG_TAG_NAME<h3>
+    <form method="POST">
+        <input name="text">
+        <input type="submit">
+    </form>
+</html> -->
+<!-- 
+<input type="text",name="example" list="exampleList"> -->
+
+<html style="background-color:rgb(215, 176, 230);">
+  
+<center> 
+
+  <h3> Update The ASG Min and Max Size</h3>
+  <form action="/second" method="post">
+    <label for="username">Enter ASG_NAME :</label>
+    <input type="text " name="username"><br><br>
+
+    <label for="minsize">Enter MinimumSize:</label>
+    <input type="text"  name="minsize"><br><br>
+
+    <label for="maxsize">Enter MinimumSize:</label>
+    <input type="text"  name="maxsize"><br><br>
+    <input type="submit" value="submit"  >
+</form>
+<br><br>
+
+<h2>Attach any Instance to ASG</h2>
+<form action="/attach" method="post">
+  <label for="asgname">Enter ASG_NAME :</label>
+  <input type="text " name="asgname"><br><br>
+
+  <label for="instancid">Enter _Instance_ID :</label>
+  <input type="text"  name="instancid"><br><br>
+
+  <input type="submit" value="submit"  >
+</form>
+
+
+  <h3>Select Autoscalling Group Name</h3>
+  <form method="POST" >
+    
+    <input name="text", list="exampleList">
+    
+    <datalist id="exampleList">
+            <option value='eks-4cbb83eb-b7cf-92ab-b563-676418b42c1c'></option>
+            <option value="eks-8ebc9bd7-d292-fb85-6846-01a83b6348ba"> </option>
+            <option value="eks-94bd4065-a364-ca8a-7c40-2b86129a34f6">  </option>
+            <option value="eks-b8bc31e0-8b47-44d0-3495-1c76f6455926">  </option>
+            <option value="eks-d8bc1534-efe8-7411-313b-89a51805303f"></option>
+            <option value="eks-k8s-snl-stage-migrate-ng-58befdc1-8aa2-5a26-ecc3-7a3566e0c891"> </option>
+            <option value="eks-ngs2-94bdc07e-c3eb-0cb8-3d40-f7c80f9463bf"> </option>
+            <option value="ludo_admin_service_web_m_pt_asg"> </option>
+            <option value="ludo_misc_service_web_m_pt_asg"> </option>
+            <option value="ludo_notification-service_web_m_pt_asg"></option>
+            <option value="ludo_payment_service_web_m_pt_asg"> </option>
+            <option value="ludo_referral_service_web_m_pt_asg"> </option>
+            <option value="ludo_reward_service_web_m_pt_asg"> </option>
+            <option value="ludo_superapp_http_web_m_pt_asg"> </option>
+            <option value="ludo_superapp_main_web_m_pt_asg"> </option>
+            <option value="ludo_tournament_service_web_m_pt_asg"> </option>
+            <option value="ludo_user-service_web_m_pt_asg"> </option>
+            <option value="ludo_wallet-service_web_m_pt_asg"> </option>
+            <option value="ninja_doorway-service_web_m_pt_asg"> </option>
+            <option value="ninja_user-service_web_m_pt_asg"> </option>
+            <option value="superapp_doorway-service_web_m_pt_asg"> </option>
+            <option value="turbo_doorway_service_web_m_pt_asg"> </option>
+            <option value="turbo_user-service_web_m_pt_asg"> </option>        
+    </datalist>
+    <input type="submit",value="Submit">
+  </form>
+<br>
+<h2>Go AWS ASG Dashboard<h2>  
+
+ 
+<button style="background-color:rgb(228, 240, 174);">
+    <a href="https://ap-south-1.console.aws.amazon.com/ec2autoscaling/home?region=ap-south-1#/details" target="_blank">GO ASG Dashboard</a>
+</button>
+
+
+</center>
+
+
+
+</html>
+
+
+
+
+
+
+<!-- <form action="e.py">
+<label for="cars">Choose a car:</label>
+
+<select id="cars" name="cars">
+  <option value="volvo">Volvo XC90</option>
+  <option value="saab">Saab 95</option>
+  <option value="mercedes">Mercedes SLK</option>
+  <option value="audi">Audi TT</option>
+</select>
+<input type="submit" value="Submit">
+</form> -->
+
+
+<!-- 
+<form method="POST">
+    <input list="html_elements" name="web_language">
+    <datalist id="html_elements">
+    <option value="eks-4cbb83eb-b7cf-92ab-b563-676418b42c1c"> </option>
+    <option value="eks-8ebc9bd7-d292-fb85-6846-01a83b6348ba"> </option>
+    <option value="eks-94bd4065-a364-ca8a-7c40-2b86129a34f6">  </option>
+    <option value="eks-b8bc31e0-8b47-44d0-3495-1c76f6455926">  </option>
+    <option value="eks-d8bc1534-efe8-7411-313b-89a51805303f"></option>
+    <option value="eks-k8s-snl-stage-migrate-ng-58befdc1-8aa2-5a26-ecc3-7a3566e0c891"> </option>
+    <option value="eks-ngs2-94bdc07e-c3eb-0cb8-3d40-f7c80f9463bf"> </option>
+    <option value="ludo_admin_service_web_m_pt_asg"> </option>
+    <option value="ludo_misc_service_web_m_pt_asg"> </option>
+    <option value="ludo_notification-service_web_m_pt_asg"></option>
+    <option value="ludo_payment_service_web_m_pt_asg"> </option>
+    <option value="ludo_referral_service_web_m_pt_asg"> </option>
+    <option value="ludo_reward_service_web_m_pt_asg"> </option>
+    <option value="ludo_superapp_http_web_m_pt_asg"> </option>
+    <option value="ludo_superapp_main_web_m_pt_asg"> </option>
+    <option value="ludo_tournament_service_web_m_pt_asg"> </option>
+    <option value="ludo_user-service_web_m_pt_asg"> </option>
+    <option value="ludo_wallet-service_web_m_pt_asg"> </option>
+    <option value="ninja_doorway-service_web_m_pt_asg"> </option>
+    <option value="ninja_user-service_web_m_pt_asg"> </option>
+    <option value="superapp_doorway-service_web_m_pt_asg"> </option>
+    <option value="turbo_doorway_service_web_m_pt_asg"> </option>
+    <option value="turbo_user-service_web_m_pt_asg"> </option>
+    </datalist>
+    <input type="submit">
+</form>    -->

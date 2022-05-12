@@ -1,0 +1,47 @@
+<!doctype html border=0>
+
+<head><title>Test</title> 
+<meta charset=utf-8> </head>
+<body style="background-color:powderblue;" >
+        <h1>ASG Information</h1>
+         <form action="/my-link/",>
+            <input type="submit" value="Click me" />
+        </form> 
+        
+     <button> <a href="/my-link/">  <h4 style="background-color:rgb(196, 231, 167);">{% for table in tables %}
+            
+                                             {{ table|safe }}
+                                             {% endfor %}
+                                            </h4> </a>
+     </button>
+    
+
+
+    <!-- <form action="/mylink2/">
+        <input type="submit" value="Click me" />
+    </form> -->
+
+   <!-- <button><a href="/mylink2">click me<h5>{% for table in tables %}            
+                        {{ table|safe }}
+                          {% endfor %}
+                           </h5></a>
+    </button> -->
+
+</body>
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+      
+{% for table in tables %}
+            
+            {{ table|safe }}
+{% endfor %}
+
+
+</body>
+</html> -->

@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <center> 
+
+<table>
+      <h3> Update The ASG Min and Max Size</h3>
+      <form action="/second" method="POST">
+        <h1></h1>
+        
+        <select name="stars">
+            <option>Select Autoscallinggroup</option>
+            <option value='eks-4cbb83eb-b7cf-92ab-b563-676418b42c1c'>eks-4cbb83eb-b7cf-92ab-b563-676418b42c1c</option>
+            <option value="eks-8ebc9bd7-d292-fb85-6846-01a83b6348ba">eks-8ebc9bd7-d292-fb85-6846-01a83b6348ba</option>
+            <option value="eks-94bd4065-a364-ca8a-7c40-2b86129a34f6">eks-94bd4065-a364-ca8a-7c40-2b86129a34f6</option>
+            <option value="eks-b8bc31e0-8b47-44d0-3495-1c76f6455926">eks-b8bc31e0-8b47-44d0-3495-1c76f6455926</option>
+            <option value="eks-d8bc1534-efe8-7411-313b-89a51805303f">eks-d8bc1534-efe8-7411-313b-89a51805303f</option>
+            <option value="eks-k8s-snl-stage-migrate-ng-58befdc1-8aa2-5a26-ecc3-7a3566e0c891">eks-k8s-snl-stage-migrate-ng-58befdc1-8aa2-5a26-ecc3-7a3566e0c891</option>
+            <option value="eks-ngs2-94bdc07e-c3eb-0cb8-3d40-f7c80f9463bf">eks-ngs2-94bdc07e-c3eb-0cb8-3d40-f7c80f9463bf</option>
+            <option value="ludo_admin_service_web_m_pt_asg">ludo_admin_service_web_m_pt_asg</option>
+            <option value="ludo_misc_service_web_m_pt_asg">ludo_misc_service_web_m_pt_asg</option>
+            <option value="ludo_notification-service_web_m_pt_asg">ludo_notification-service_web_m_pt_asg</option>
+            <option value="ludo_payment_service_web_m_pt_asg">ludo_payment_service_web_m_pt_asg</option>
+            <option value="ludo_referral_service_web_m_pt_asg">ludo_referral_service_web_m_pt_asg</option>
+            <option value="ludo_reward_service_web_m_pt_asg">ludo_reward_service_web_m_pt_asg</option>
+            <option value="ludo_superapp_http_web_m_pt_asg">ludo_superapp_http_web_m_pt_asg</option>
+            <option value="ludo_superapp_main_web_m_pt_asg">ludo_superapp_main_web_m_pt_asg</option>
+            <option value="ludo_tournament_service_web_m_pt_asg">ludo_tournament_service_web_m_pt_asg</option>
+            <option value="ludo_user-service_web_m_pt_asg">ludo_user-service_web_m_pt_asg</option>
+            <option value="ludo_wallet-service_web_m_pt_asg">ludo_wallet-service_web_m_pt_asg</option>
+            <option value="ninja_doorway-service_web_m_pt_asg">ninja_doorway-service_web_m_pt_asg</option>
+            <option value="ninja_user-service_web_m_pt_asg">ninja_user-service_web_m_pt_asg</option>
+            <option value="superapp_doorway-service_web_m_pt_asg">superapp_doorway-service_web_m_pt_asg</option>
+            <option value="turbo_doorway_service_web_m_pt_asg">turbo_doorway_service_web_m_pt_asg</option>
+            <option value="turbo_user-service_web_m_pt_asg">turbo_user-service_web_m_pt_asg</option> 
+        </select><br><br>
+        
+        <label for="minsize">Enter MinimumSize:</label>
+        <input type="text"  name="minsize"><br><br>
+    
+        <label for="maxsize">Enter MinimumSize:</label>
+        <input type="text"  name="maxsize"><br><br>
+        
+        <input type="submit" value="submit">
+        
+        </form>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </table>
+
+    <style>
+      body {
+        background: #410829f3;
+        color: hsla(60, 33%, 96%, 0.918);
+        font-family: sans-serif;
+        font-size: 16px;
+      }
+      .wrapper {
+        margin: 80px auto;
+        text-align: center;
+        width: 100%;
+        position: relative;
+      }
+      .button {
+        padding: 15px 100px;
+        margin: 10px 4px;
+        color: hwb(192 9% 42% / 0.884);
+        font-family: sans-serif;
+        text-transform: uppercase;
+        text-align: center;
+        position: relative;
+        text-decoration: none;
+        display: inline-block;
+      }
+      .button {
+        border: 1px solid transparent;
+        -webkit-transition: all 0.4s cubic-bezier(.5, .24, 0, 1);
+        transition: all 0.4s cubic-bezier(.5, .24, 0, 1);
+      }
+      .button::before {
+        content: '';
+        position: absolute;
+        left: 0px;
+        bottom: 0px;
+        z-index: -1;
+        width: 0%;
+        height: 1px;
+        background: #47ebe2;
+        box-shadow: inset 0px 0px 0px #92c998;
+        display: block;
+        -webkit-transition: all 0.4s cubic-bezier(.5, .24, 0, 1);
+        transition: all 0.4s cubic-bezier(.5, .24, 0, 1)
+      }
+      .button:hover::before {
+        width: 100%;
+      }
+      .button::after {
+        content: '';
+        position: absolute;
+        right: 1px;
+        top: 0px;
+        z-index: -1;
+        width: 0%;
+        height: 1px;
+        background: #4198c0;
+        -webkit-transition: all 0.4s cubic-bezier(.7, .25, 0, 1);
+        transition: all 0.4s cubic-bezier(.7, .25, 0, 1)
+      }
+      .button:hover::after {
+        width: 100%;
+      }
+      .button:hover {
+        border-left: 1px solid #db9090;
+        border-right: 1px solid hsla(214, 35%, 68%, 0.933);
+      }
+    </style>
+  </head>
+  <body>
+ 
+
+    <div class="wrapper">  
+      <a href= "/abc" method="post"" class="button">See All ASG </a>
+      <!-- <input type="submit", value="submit"> -->
+      <a href="https://ap-south-1.console.aws.amazon.com/ec2autoscaling/home?region=ap-south-1#/details" class="button">Go ASG Dashboard</a>
+    </div>
+  </body>
+</html>
+
+
+
+
+
+

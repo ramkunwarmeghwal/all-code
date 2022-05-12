@@ -1,0 +1,49 @@
+<html  style="background-color:rgba(47, 149, 190, 0.185);">
+
+<body>
+
+<style>
+
+th, td {
+  border: 1px solid rgba(144, 153, 173, 0.171);
+  padding: 10px;
+  
+}    
+
+
+</style>    
+
+<h2>ALL ASG Information</h2>
+    
+
+<table >
+    <tr>
+      <th>ASG_tag</th>
+      <th>Availibility_zone</th>
+      <th>MaxSize</th>
+      <th>MinSize</th>
+      <th>desiredCapicity</th>
+      <th>Instances(type and Id)</th>
+      <th>TAGS</th>
+    </tr>
+      <ul>
+          {% for task in review %}
+              <tr>
+                  <td style="background-color:rgba(91, 113, 175, 0.418);">{{ task[0] }}</td>
+                  <td style="background-color:rgba(236, 159, 217, 0.726);">{{ task[1] }}</td>
+                  <td style="background-color:rgba(84, 230, 140, 0.041);">{{ task[2] }}</td>
+                  <td style="background-color:powderblue;">{{ task[3] }}</td>
+                  <td style="background-color:rgb(177, 91, 127);">{{ task[4] }}</td>
+                  <td >{{ task[5] }}</td>                  
+                  <td style="background-color:rgba(41, 28, 92, 0.288);">{{ task[6] }}</td>
+
+              </tr>
+          {% endfor %}
+      </ul>
+  </table>
+
+
+  
+
+</body>
+</html>

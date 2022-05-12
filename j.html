@@ -1,0 +1,157 @@
+<html style="background-color:rgb(204, 208, 216);">
+
+  <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>   
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous"> -->
+
+  
+<center> 
+
+  <h3> Update The ASG Min and Max Size</h3>
+  <form action="/second" method="POST">
+    <h1></h1>
+    
+    <select name="stars">
+        <option>Select Autoscallinggroup</option>
+        <option value='eks-4cbb83eb-b7cf-92ab-b563-676418b42c1c'>eks-4cbb83eb-b7cf-92ab-b563-676418b42c1c</option>
+        <option value="eks-8ebc9bd7-d292-fb85-6846-01a83b6348ba">eks-8ebc9bd7-d292-fb85-6846-01a83b6348ba</option>
+        <option value="eks-94bd4065-a364-ca8a-7c40-2b86129a34f6">eks-94bd4065-a364-ca8a-7c40-2b86129a34f6</option>
+        <option value="eks-b8bc31e0-8b47-44d0-3495-1c76f6455926">eks-b8bc31e0-8b47-44d0-3495-1c76f6455926</option>
+        <option value="eks-d8bc1534-efe8-7411-313b-89a51805303f">eks-d8bc1534-efe8-7411-313b-89a51805303f</option>
+        <option value="eks-k8s-snl-stage-migrate-ng-58befdc1-8aa2-5a26-ecc3-7a3566e0c891">eks-k8s-snl-stage-migrate-ng-58befdc1-8aa2-5a26-ecc3-7a3566e0c891</option>
+        <option value="eks-ngs2-94bdc07e-c3eb-0cb8-3d40-f7c80f9463bf">eks-ngs2-94bdc07e-c3eb-0cb8-3d40-f7c80f9463bf</option>
+        <option value="ludo_admin_service_web_m_pt_asg">ludo_admin_service_web_m_pt_asg</option>
+        <option value="ludo_misc_service_web_m_pt_asg">ludo_misc_service_web_m_pt_asg</option>
+        <option value="ludo_notification-service_web_m_pt_asg">ludo_notification-service_web_m_pt_asg</option>
+        <option value="ludo_payment_service_web_m_pt_asg">ludo_payment_service_web_m_pt_asg</option>
+        <option value="ludo_referral_service_web_m_pt_asg">ludo_referral_service_web_m_pt_asg</option>
+        <option value="ludo_reward_service_web_m_pt_asg">ludo_reward_service_web_m_pt_asg</option>
+        <option value="ludo_superapp_http_web_m_pt_asg">ludo_superapp_http_web_m_pt_asg</option>
+        <option value="ludo_superapp_main_web_m_pt_asg">ludo_superapp_main_web_m_pt_asg</option>
+        <option value="ludo_tournament_service_web_m_pt_asg">ludo_tournament_service_web_m_pt_asg</option>
+        <option value="ludo_user-service_web_m_pt_asg">ludo_user-service_web_m_pt_asg</option>
+        <option value="ludo_wallet-service_web_m_pt_asg">ludo_wallet-service_web_m_pt_asg</option>
+        <option value="ninja_doorway-service_web_m_pt_asg">ninja_doorway-service_web_m_pt_asg</option>
+        <option value="ninja_user-service_web_m_pt_asg">ninja_user-service_web_m_pt_asg</option>
+        <option value="superapp_doorway-service_web_m_pt_asg">superapp_doorway-service_web_m_pt_asg</option>
+        <option value="turbo_doorway_service_web_m_pt_asg">turbo_doorway_service_web_m_pt_asg</option>
+        <option value="turbo_user-service_web_m_pt_asg">turbo_user-service_web_m_pt_asg</option> 
+    </select><br><br>
+    
+    <label for="minsize">Enter MinimumSize:</label>
+    <input type="text"  name="minsize"><br><br>
+
+    <label for="maxsize">Enter MinimumSize:</label>
+    <input type="text"  name="maxsize"><br><br>
+    
+    <input type="submit" value="submit">
+    
+    </form>
+
+
+
+
+
+
+  <!-- <form action="/second" method="post">
+    <label for="username">Enter ASG_NAME :</label>
+    <input type="text " name="username"><br><br>
+
+    <label for="minsize">Enter MinimumSize:</label>
+    <input type="text"  name="minsize"><br><br>
+
+    <label for="maxsize">Enter MinimumSize:</label>
+    <input type="text"  name="maxsize"><br><br>
+    <input type="submit" value="submit"  >
+</form> -->
+<!-- <br><br>
+
+<h2>Attach any Instance to ASG</h2>
+<form action="/attach" method="post">
+    <select name="stars">
+        <option>Select Autoscallinggroup</option>
+        <option value='eks-4cbb83eb-b7cf-92ab-b563-676418b42c1c'>eks-4cbb83eb-b7cf-92ab-b563-676418b42c1c</option>
+        <option value="eks-8ebc9bd7-d292-fb85-6846-01a83b6348ba">eks-8ebc9bd7-d292-fb85-6846-01a83b6348ba</option>
+        <option value="eks-94bd4065-a364-ca8a-7c40-2b86129a34f6">eks-94bd4065-a364-ca8a-7c40-2b86129a34f6</option>
+        <option value="eks-b8bc31e0-8b47-44d0-3495-1c76f6455926">eks-b8bc31e0-8b47-44d0-3495-1c76f6455926</option>
+        <option value="eks-d8bc1534-efe8-7411-313b-89a51805303f">eks-d8bc1534-efe8-7411-313b-89a51805303f</option>
+        <option value="eks-k8s-snl-stage-migrate-ng-58befdc1-8aa2-5a26-ecc3-7a3566e0c891">eks-k8s-snl-stage-migrate-ng-58befdc1-8aa2-5a26-ecc3-7a3566e0c891</option>
+        <option value="eks-ngs2-94bdc07e-c3eb-0cb8-3d40-f7c80f9463bf">eks-ngs2-94bdc07e-c3eb-0cb8-3d40-f7c80f9463bf</option>
+        <option value="ludo_admin_service_web_m_pt_asg">ludo_admin_service_web_m_pt_asg</option>
+        <option value="ludo_misc_service_web_m_pt_asg">ludo_misc_service_web_m_pt_asg</option>
+        <option value="ludo_notification-service_web_m_pt_asg">ludo_notification-service_web_m_pt_asg</option>
+        <option value="ludo_payment_service_web_m_pt_asg">ludo_payment_service_web_m_pt_asg</option>
+        <option value="ludo_referral_service_web_m_pt_asg">ludo_referral_service_web_m_pt_asg</option>
+        <option value="ludo_reward_service_web_m_pt_asg">ludo_reward_service_web_m_pt_asg</option>
+        <option value="ludo_superapp_http_web_m_pt_asg">ludo_superapp_http_web_m_pt_asg</option>
+        <option value="ludo_superapp_main_web_m_pt_asg">ludo_superapp_main_web_m_pt_asg</option>
+        <option value="ludo_tournament_service_web_m_pt_asg">ludo_tournament_service_web_m_pt_asg</option>
+        <option value="ludo_user-service_web_m_pt_asg">ludo_user-service_web_m_pt_asg</option>
+        <option value="ludo_wallet-service_web_m_pt_asg">ludo_wallet-service_web_m_pt_asg</option>
+        <option value="ninja_doorway-service_web_m_pt_asg">ninja_doorway-service_web_m_pt_asg</option>
+        <option value="ninja_user-service_web_m_pt_asg">ninja_user-service_web_m_pt_asg</option>
+        <option value="superapp_doorway-service_web_m_pt_asg">superapp_doorway-service_web_m_pt_asg</option>
+        <option value="turbo_doorway_service_web_m_pt_asg">turbo_doorway_service_web_m_pt_asg</option>
+        <option value="turbo_user-service_web_m_pt_asg">turbo_user-service_web_m_pt_asg</option> 
+    </select><br><br>
+
+  <label for="instancid">Enter _Instance_ID :</label>
+  <input type="text"  name="instancid"><br><br>
+
+  <input type="submit" value="submit"  >
+</form> -->
+
+
+  <h3>Select Autoscalling Group Name</h3>
+  <form method="POST" >
+    
+    <input name="text", list="exampleList">
+    
+    <datalist id="exampleList">
+            <option value='eks-4cbb83eb-b7cf-92ab-b563-676418b42c1c'></option>
+            <option value="eks-8ebc9bd7-d292-fb85-6846-01a83b6348ba"> </option>
+            <option value="eks-94bd4065-a364-ca8a-7c40-2b86129a34f6">  </option>
+            <option value="eks-b8bc31e0-8b47-44d0-3495-1c76f6455926">  </option>
+            <option value="eks-d8bc1534-efe8-7411-313b-89a51805303f"></option>
+            <option value="eks-k8s-snl-stage-migrate-ng-58befdc1-8aa2-5a26-ecc3-7a3566e0c891"> </option>
+            <option value="eks-ngs2-94bdc07e-c3eb-0cb8-3d40-f7c80f9463bf"> </option>
+            <option value="ludo_admin_service_web_m_pt_asg"> </option>
+            <option value="ludo_misc_service_web_m_pt_asg"> </option>
+            <option value="ludo_notification-service_web_m_pt_asg"></option>
+            <option value="ludo_payment_service_web_m_pt_asg"> </option>
+            <option value="ludo_referral_service_web_m_pt_asg"> </option>
+            <option value="ludo_reward_service_web_m_pt_asg"> </option>
+            <option value="ludo_superapp_http_web_m_pt_asg"> </option>
+            <option value="ludo_superapp_main_web_m_pt_asg"> </option>
+            <option value="ludo_tournament_service_web_m_pt_asg"> </option>
+            <option value="ludo_user-service_web_m_pt_asg"> </option>
+            <option value="ludo_wallet-service_web_m_pt_asg"> </option>
+            <option value="ninja_doorway-service_web_m_pt_asg"> </option>
+            <option value="ninja_user-service_web_m_pt_asg"> </option>
+            <option value="superapp_doorway-service_web_m_pt_asg"> </option>
+            <option value="turbo_doorway_service_web_m_pt_asg"> </option>
+            <option value="turbo_user-service_web_m_pt_asg"> </option>        
+    </datalist>
+    <input type="submit",value="Submit">
+  </form>
+<br>
+<h2>Go AWS ASG Dashboard<h2>  
+
+ 
+<button style="background-color:rgb(94, 193, 206);">
+    <a href="https://ap-south-1.console.aws.amazon.com/ec2autoscaling/home?region=ap-south-1#/details" target="_blank">GO ASG Dashboard</a>
+</button><br>
+
+<h2>See All ASG </h2>
+<button style="background-color:rgba(96, 130, 224, 0.418);" >
+  <form action="/abc" method="post">
+    <input type="submit",value="Click Me"> 
+  </form>
+</button>
+
+
+</center>
+
+
+
+</html>
+
